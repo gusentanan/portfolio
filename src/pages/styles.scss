@@ -1,0 +1,64 @@
+@import '../styles/base.scss';
+
+$spacerHeight: $navBarHeight + 2 * $padding;
+.navBarSpacer {
+  height: $spacerHeight;
+}
+
+.main {
+    height: 100vh;
+    background-color: $neutral-bg;
+    
+    .mainLogo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url('../assets/images/logo/bagus-merta.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 550px;
+        height: 150px;
+    }
+  }
+
+.quotes {
+    padding: $padding * 10;
+    background-color: $low-contrast-bg;
+    font-weight: bold;
+
+    .quotesTextHeader {
+        font-size: 3.5em;
+        line-height: 1.55em;
+        color: #333;
+        font-family: "Heebo", sans-serif;
+        margin-bottom: 20px;
+        max-width: 900px;
+      }
+      
+      .quotesInverted {
+        background-color: #333;
+        color: white;
+        padding: 0 3px;
+      }
+      
+}  
+
+.bio {
+    padding: $padding;
+    background-color: $medium-contrast-bg;
+    font-size: 1.1em;
+    line-height: 2em;
+    vertical-align: middle;
+    text-align: center;
+    color: $medium-contrast-text;
+
+    .avatar {
+        max-width: 100%;
+        max-height: 200px;
+      }
+    
+    .section {
+        vertical-align: middle;
+      }
+}

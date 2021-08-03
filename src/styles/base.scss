@@ -1,0 +1,41 @@
+@import "_colors.scss";
+@import "_layout.scss";
+@import "_animations.scss";
+
+body {
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+  
+  a {
+    color: $primary-accent;
+  }
+  
+  ::selection {
+    background: $primary-accent;
+    color: white;
+  }
+  ::-moz-selection {
+    background: $primary-accent;
+    color: white;
+  }
+  
+  .both-center {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }

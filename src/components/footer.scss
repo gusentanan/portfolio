@@ -1,0 +1,22 @@
+@import '../styles/base.scss';
+
+
+.footer {
+    min-height: $footerHeight;
+    padding: $padding;
+    color: $medium-contrast-text;
+    border-top: 1px solid $medium-contrast-bg;
+
+}
+
+.footLogo {
+    background-image: url('../assets/images/logo/bagus-merta.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: $padding;
+}
+
+.footer .verticalSpacer {
+    height: 40px;
+}
+

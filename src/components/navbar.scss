@@ -1,0 +1,111 @@
+@import "../styles/base.scss";
+
+
+.navBar {
+  color: $high-contrast-text;
+  padding: $padding;
+  line-height: $navBarHeight;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: calc(100% - 20px);
+  transition: background-color 0.5s ease;
+  z-index: 10;
+
+  .menuLogo {
+    background-image: url("../assets/images/logo/bagus-merta.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 170px;
+    height: 2.5em;
+    float: left;
+    z-index: 2;
+  }
+
+  .pageWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navLogo {
+    flex: 1;
+    opacity: 0;
+  }
+
+  .navLogo.scrolled {
+    opacity: 1;
+    animation: slidein ease 0.5s;
+    -webkit-animation: slidein ease 0.5s;
+    -moz-animation: slidein ease 0.5s;
+    -o-animation: slidein ease 0.5s;
+    -ms-animation: slidein ease 0.5s;
+  }
+
+  .collapse {
+    width: $navBarHeight - 2 * $padding;
+    height: $navBarHeight - 2 * $padding;
+  }
+
+  button {
+    display: none;
+    background: transparent;
+    height: $navBarHeight;
+  }
+
+  button:hover {
+    background: $low-contrast-bg;
+  }
+
+  a {
+    text-decoration: none;
+    color: $high-contrast-text;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Heebo", sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .link {
+    display: inline-block;
+    padding: 0 $padding;
+  }
+
+  .link:hover {
+    background: $low-contrast-bg;
+  }
+}
+
+.navBar.scrolled {
+  background-color: $neutral-bg;
+  box-shadow: 0 0 20px -10px #aaa;
+}
+
+@media screen and (max-width: $maxMobileWidth) {
+  .navBar {
+    .pageWrapper {
+      display: block;
+    }
+
+    .navItems {
+      display: none;
+    }
+
+    .navItems.open {
+      width: 100%;
+      display: block;
+      text-align: left;
+      background-color: $neutral-bg;
+    }
+
+    button {
+      display: block;
+      float: right;
+    }
+
+    .link {
+      display: block;
+    }
+  }
+}
+

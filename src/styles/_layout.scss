@@ -1,0 +1,25 @@
+$maxPageWidth: 1080px;
+$mediumPageWidth: 768px;
+$maxMobileWidth: 645px;
+$navBarHeight: 50px;
+$footerHeight: 100px;
+$spacerHeight: 100px;
+$padding: 10px;
+
+.pageWrapper {
+  width: 100%;
+  max-width: $maxPageWidth;
+  margin: auto;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+}
+
+.section {
+  width: calc(33% - 20px);
+  display: inline-block;
+  vertical-align: top;
+  padding: $padding;
+}
