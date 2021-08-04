@@ -9,7 +9,7 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: "Bagus Merta - Portfolio",
-    description: "Hi my name is Bagus, I'm a coder or not",
+    description: "Hi my name is Bagus, I'm a coder",
     // url: "www.bagusmerta.com", // No trailing slash allowed!
     // siteUrl: "www.bagusmerta.com", // No trailing slash allowed!
     image: "/avatar.png", // Path to your image you placed in the 'static' folder
@@ -33,7 +33,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `projects`,
-        path: `${__dirname}/src/assets/projects`,
+        path: `${__dirname}/src/assets/markdown/projects`,
       },
     },
   ],

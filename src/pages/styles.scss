@@ -8,6 +8,16 @@ $spacerHeight: $navBarHeight + 2 * $padding;
 .main {
     height: 100vh;
     background-color: $neutral-bg;
+
+    .landing {
+      text-align: center;
+      font-size: 6em;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color:$middle-contrast-text;
+      transform: translate(-50%, -50%);
+    }
     
     .mainLogo {
         position: absolute;
@@ -30,14 +40,23 @@ $spacerHeight: $navBarHeight + 2 * $padding;
     .quotesTextHeader {
         font-size: 3.5em;
         line-height: 1.55em;
-        color: #333;
+        letter-spacing: 0px;
+        color: $middle-contrast-text;
         font-family: "Heebo", sans-serif;
         margin-bottom: 20px;
         max-width: 900px;
       }
+
+      .quotesTextHeaderMini {
+        font-size: 1.5em;
+        max-width: 700px;
+        font-weight: 800;
+        color: $medium-contrast-text;
+
+      }
       
       .quotesInverted {
-        background-color: #333;
+        background-color: $middle-contrast-text;
         color: white;
         padding: 0 3px;
       }
@@ -49,6 +68,7 @@ $spacerHeight: $navBarHeight + 2 * $padding;
     background-color: $medium-contrast-bg;
     font-size: 1.1em;
     line-height: 2em;
+    border-top: 10px solid $medium-contrast-bg;
     vertical-align: middle;
     text-align: center;
     color: $medium-contrast-text;
@@ -62,3 +82,17 @@ $spacerHeight: $navBarHeight + 2 * $padding;
         vertical-align: middle;
       }
 }
+
+.projects {
+    padding: $spacerHeight $padding;
+    background-color: $low-contrast-bg;
+  
+    h1 {
+      margin-bottom: 50px;
+    }
+  
+    h1:not(:first-child) {
+      margin: 50px 0;
+    }
+  }
+

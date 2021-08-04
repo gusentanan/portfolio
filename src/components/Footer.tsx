@@ -12,7 +12,7 @@ export default () => {
     return <div className="footer">
         <div className="verticalSpacer"></div>
         <div className="pageWrapper">
-            <div><div className="footLogo"></div> &copy; {date.getFullYear()}</div>
+            <div><div className="footLogo"></div> &copy; {date.getFullYear()}</div> <br></br>
             <div>Made with {waterSVG}</div>
             <div>Product of Indonesia</div>
         </div>

@@ -1,0 +1,44 @@
+@import '../styles/base.scss';
+
+.cardList {
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 20px;
+    
+    .cardWrapper {
+      padding: $padding;
+      padding-bottom: 30px;
+      flex: 1 1 30%;
+    }
+  
+    .card {
+      background-color: $neutral-bg;
+      border-bottom: 1px solid $medium-contrast-bg;
+      padding: $padding;
+      line-height: 1.5em;
+      color: $medium-contrast-text;
+      height: 100%;
+      position: relative;
+      margin-bottom: 20px;
+  
+      h2 {
+        font-family: "Heebo", sans-serif;
+        padding-top: 40px;
+        color: $high-contrast-text;
+        margin: 10px 0;
+      }
+  
+      .links {
+        position: absolute;
+        bottom: 0;
+        padding: $padding 0;
+        a:not(:first-child) {
+          padding: 0 10px;
+          margin: 0 10px;
+          border-left: 1px solid $medium-contrast-bg;
+        }
+      }
+  
+
+    }
+  }
