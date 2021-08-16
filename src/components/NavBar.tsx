@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import styles from './Logo.module.scss';
+
 import './navbar.scss';
 
 const collapseSVG = <svg viewBox="0 0 448 512" className="collapse icon">
@@ -47,13 +47,10 @@ class NavBar extends Component<any, any> {
                         <a href="/about"><div className="link">About</div></a>
                         <a href="/projects"><div className="link">Projects</div></a>
                     </div>
-
                 </div>
             </div>
         </div>
     }
-
-
 }
 
 export default NavBar;

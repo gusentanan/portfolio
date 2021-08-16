@@ -8,16 +8,6 @@ $spacerHeight: $navBarHeight + 2 * $padding;
 .main {
     height: 100vh;
     background-color: $neutral-bg;
-
-    .landing {
-      text-align: center;
-      font-size: 6em;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      color:$middle-contrast-text;
-      transform: translate(-50%, -50%);
-    }
     
     .mainLogo {
         position: absolute;
@@ -84,7 +74,7 @@ $spacerHeight: $navBarHeight + 2 * $padding;
 }
 
 .projects {
-    padding: $spacerHeight $padding;
+    padding: $spacerHeight $padding ;
     background-color: $low-contrast-bg;
   
     h1 {
@@ -95,4 +85,3 @@ $spacerHeight: $navBarHeight + 2 * $padding;
       margin: 50px 0;
     }
   }
-

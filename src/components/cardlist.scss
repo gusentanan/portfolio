@@ -1,5 +1,6 @@
 @import '../styles/base.scss';
 
+$spacerHeight: $navBarHeight + 2 * $padding;
 .cardList {
     display: flex;
     flex-flow: row wrap;

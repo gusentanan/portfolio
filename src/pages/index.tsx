@@ -13,7 +13,6 @@ export default (props: any) => {
   const projects = props.data.allMarkdownRemark.edges;
   return <div>
     <NavBar isLanding={true}></NavBar>
-
     <div className="main">
       <div className="navBarSpacer"></div>
         <div className="pageWrapper">

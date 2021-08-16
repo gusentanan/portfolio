@@ -19,7 +19,6 @@ export default (props: any) => {
     });
 
     return <div className="cardList" >
-        {list}
-        
+            {list}  
     </div>;
 }
