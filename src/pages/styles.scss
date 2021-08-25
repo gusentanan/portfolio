@@ -85,3 +85,19 @@ $spacerHeight: $navBarHeight + 2 * $padding;
       margin: 50px 0;
     }
   }
+
+  @media screen and (max-width: $maxMobileWidth) {
+    .main{
+      .mainLogo {
+        width: 150px;
+        height: 80px;
+      }
+    }
+
+    .quotes {
+      .quotesTextHeader {
+        font-size: 2em;
+      }
+    }
+    
+  }

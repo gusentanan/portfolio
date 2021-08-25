@@ -23,3 +23,10 @@ $padding: 10px;
   vertical-align: top;
   padding: $padding;
 }
+
+@media screen and (max-width: $maxMobileWidth) {
+  .section {
+    display: block;
+    width: calc(100% - 20px);
+  }
+}
